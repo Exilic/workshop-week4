@@ -1,5 +1,6 @@
 package se.lexicon.workshopweek4.dao;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import se.lexicon.workshopweek4.entity.AppUser;
 
@@ -7,6 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Collection;
 
+@Repository
 public class AppUserDaoImpl implements AppUserDao{
 
     @PersistenceContext
